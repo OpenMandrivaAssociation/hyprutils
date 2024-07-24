@@ -1,9 +1,9 @@
-%define major 0
+%define major 1
 %define libname %mklibname hyprutils
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.1.5
+Version:        0.2.0
 Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
