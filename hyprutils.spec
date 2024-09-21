@@ -3,7 +3,7 @@
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.2.1
+Version:        0.2.2
 Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
@@ -19,6 +19,7 @@ BuildRequires:  pkgconfig(pixman-1)
 
 %package -n %{libname}
 Summary:        Shared library for %{name}
+Provides:  %{name} = %{EVRD}
 
 %description -n %{libname}
 This package contains the shared library files.
