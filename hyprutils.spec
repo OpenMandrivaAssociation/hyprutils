@@ -44,7 +44,7 @@ Development files for %{name}.
 %files -n %{libname}
 %license LICENSE
 %doc README.md
-%{_libdir}/lib%{name}.so.%{version}
+%{_libdir}/lib%{name}.so.0.3.1
 %{_libdir}/lib%{name}.so.%{major}
 
 %files -n %{devname}
