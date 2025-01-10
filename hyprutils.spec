@@ -3,7 +3,7 @@
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.3.2
+Version:        0.3.3
 Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
@@ -44,7 +44,7 @@ Development files for %{name}.
 %files -n %{libname}
 %license LICENSE
 %doc README.md
-%{_libdir}/lib%{name}.so.0.3.1
+%{_libdir}/lib%{name}.so.%{version}
 %{_libdir}/lib%{name}.so.%{major}
 
 %files -n %{devname}
