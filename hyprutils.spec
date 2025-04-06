@@ -4,7 +4,7 @@
 
 Name:           hyprutils
 Version:        0.6.0
-Release:        1
+Release:        2
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
 License:        BSD-3-Clause
