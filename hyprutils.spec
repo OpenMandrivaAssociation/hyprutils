@@ -13,6 +13,7 @@ Source:         https://github.com/hyprwm/hyprutils/archive/v%{version}/%{name}-
 
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(pixman-1)
+BuildRequires:  pkgconfig(gtest)
 
 %description
 %{summary}.
