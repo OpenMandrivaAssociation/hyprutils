@@ -12,6 +12,7 @@ URL:            https://github.com/hyprwm/hyprutils
 Source:         https://github.com/hyprwm/hyprutils/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
+BuildRequires:  make
 BuildRequires:  pkgconfig(pixman-1)
 BuildRequires:  pkgconfig(gtest)
 
