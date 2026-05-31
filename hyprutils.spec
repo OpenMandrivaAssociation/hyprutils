@@ -1,9 +1,9 @@
-%define major 11
+%define major 12
 %define libname %mklibname hyprutils
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.12.0
+Version:        0.13.1
 Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
@@ -36,8 +36,11 @@ Development files for %{name}.
 %prep
 %autosetup -p1
 
+# Release mode is recommended for hypr. Opting it instead debug also enables -O3.
+
 %build
-%cmake
+%cmake \
+	-DCMAKE_BUILD_TYPE=Release
 %make_build
 
 %install
