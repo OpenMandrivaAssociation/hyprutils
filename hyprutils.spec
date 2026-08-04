@@ -1,4 +1,4 @@
-%define major 12
+%define major 13
 %define libname %mklibname hyprutils
 %define devname %mklibname -d hyprutils
 
