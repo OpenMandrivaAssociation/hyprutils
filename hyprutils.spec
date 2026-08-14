@@ -1,9 +1,9 @@
 %define major 13
-%define libname %mklibname hyprutils
+%define libname %mklibname hyprutils %{major}
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.14.0
+Version:        0.14.1
 Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
@@ -28,6 +28,7 @@ This package contains the shared library files.
 
 %package -n %{devname}
 Summary:        Development files for %{name}
+Group:		Development/C++
 Requires:	%{libname} = %{EVRD}
 
 %description -n %{devname}
@@ -47,12 +48,12 @@ Development files for %{name}.
 %make_install -C build
 
 %files -n %{libname}
-%license LICENSE
-%doc README.md
 %{_libdir}/lib%{name}.so.%{version}
 %{_libdir}/lib%{name}.so.%{major}
 
 %files -n %{devname}
+%license LICENSE
+%doc README.md
 %{_includedir}/%{name}/
 %{_libdir}/lib%{name}.so
 %{_libdir}/pkgconfig/%{name}.pc
