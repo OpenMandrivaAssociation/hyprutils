@@ -1,10 +1,11 @@
 %define major 13
-%define libname %mklibname hyprutils %{major}
+%define libname %mklibname hyprutils
+%define oldlibname %mklibname hyprutils 13
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
 Version:        0.14.1
-Release:        1
+Release:        2
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
 License:        BSD-3-Clause
@@ -22,6 +23,7 @@ BuildRequires:  pkgconfig(gtest)
 %package -n %{libname}
 Summary:        Shared library for %{name}
 Provides:  %{name} = %{EVRD}
+%rename %{oldlibname}
 
 %description -n %{libname}
 This package contains the shared library files.
