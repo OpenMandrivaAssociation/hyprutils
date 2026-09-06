@@ -4,8 +4,8 @@
 %define devname %mklibname -d hyprutils
 
 Name:           hyprutils
-Version:        0.14.1
-Release:        2
+Version:        0.14.2
+Release:        1
 Summary:        Hyprland utilities library used across the ecosystem
 Group:          System/Hyprland
 License:        BSD-3-Clause
